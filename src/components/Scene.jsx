@@ -28,7 +28,7 @@ export function Scene() {
         makeDefault
         enabled={true}
         distance={30}
-        mouseButtons-left={0}
+        mouseButtons-left={1}
         touches-one={0}
       />
       <Environment preset="sunset" />
