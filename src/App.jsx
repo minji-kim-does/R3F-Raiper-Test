@@ -6,7 +6,7 @@ function App() {
   return (
     <Canvas shadows camera={{ position: [3, 3, 3], fov: 30 }}>
       <color attach="background" args={["#ececec"]} />
-      <Physics debug={true}>
+      <Physics debug={false}>
           <Scene />
       </Physics>
     </Canvas>

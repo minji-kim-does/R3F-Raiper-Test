@@ -13,10 +13,10 @@ export function Scene() {
       controlsRef.current.setLookAt(
         10,
         10,
-        10, // 카메라 위치 (x, y, z)
+        10, 
         0,
         0,
-        0, // 타겟 위치 (x, y, z)
+        0, 
         true
       );
     }
@@ -27,15 +27,15 @@ export function Scene() {
       <CameraControls
         makeDefault
         enabled={true}
-        distance={20}
+        distance={30}
         mouseButtons-left={0}
         touches-one={0}
       />
       <Environment preset="sunset" />
       <ambientLight color="#fff" intensity={1} />
       <Ground />
-      <PhysicsObject position={[-1, 1, 0]} />
-      <PhysicsText text="T E X T " position={[0, 1, 0]} />
+      <PhysicsObject position={[-3, 2, 0]}  />
+      <PhysicsText text="D O E S " position={[0, 0.1, 0]} />
     </>
   );
 }
